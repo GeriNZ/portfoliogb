@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Nunito&family=Playfair+Display:wght@600&family=Sacramento&family=Sail&family=Varela+Round&display=swap');
+
+/* font-family: 'Julius Sans One', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Sacramento', cursive;
+font-family: 'Sail', cursive;
+font-family: 'Varela Round', sans-serif; */
+
+h1, h2, h3, h6, p {
+  text-align: center;
+  color:white;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  
+}
+
+h2 {
+  font-family: 'Sacramento', cursive;
+  font-size: 2.3rem;
+}
+
+h6 {
+  font-family: 'Sail', cursive;
+  
+}
+
+p {
+  font-family: 'Varela Round', sans-serif;
+
+}
+
+
+.icon {
+  color: white;
+  font-size: 4rem;
+  
+}
+
+.icon1 {
+  color: white;
+  font-size: 2rem;
+  letter-spacing: 3rem;
+  margin: 10px;
+  
+}
+    
+
+.about {
+    /* background-color: rgb(0, 255, 170); */
+    min-height: 600px;
+    position: relative;
+    margin-top: 50px;
+}
+
+.pic {
+  width: 500px;
+  height: 500px;
+  /* Center vertically and horizontally */
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  margin: -25px 0 0 -25px; /* apply negative top and left margins to truly center the element */
+}
+
+.text {
+  width: 50%;
+  
+  float: right;
+}
+
+.skills {
+    /* background-color: rgb(119, 25, 107); */
+    height: 100px;
+    margin-top: 50px;
+}
+
+.work {
+    /* background-color: rgb(187, 128, 20); */
+    min-height: 100px;
+    position: relative;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+
+button {
+  border: 2px solid white;
+  border-radius: 3px;
+  background: rgba(0, 128, 0, 0);
+  padding: 5px;
+  margin: 10px;;
+  color: white;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 1rem;
+ 
+
+}
+
+
+a {
+  text-decoration: none;
+}
+body {
+  margin-left: 10px;
+  margin-right: 10px;
+  background-image: url("/images/bk.jpg");
+ 
+}
+ 
+
+footer {
+    background-color: rgba(0, 0, 0, 0.733);
+    height: 50px;
+    
+}
+
+footer p {
+  color: white;
+}
+
+figure {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  *,
+  *:before,
+  *:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  /* body{
+    height: 100vh;
+    width: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+  } */
+
+  .box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+figure{
+  height: 300px;
+  width: 300px;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 98px 0;
+  cursor: pointer;
+}
+
+img {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  
+}
+
+figure:hover img{
+  filter: blur(2px);
+}
+
+figure:after{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3;
+  border-radius: 50%;
+
+  background: linear-gradient(
+    to right,
+    #00dbde,
+    #fc00ff)
+}
+
+/* .figure:nth-child(1):after{
+  background: linear-gradient(
+    to right,
+    #00dbde,
+    #fc00ff
+  )
+} */
+
+figure:hover:after{
+  opacity: 0.6;
+
+}
+
+figcaption{
+  color: white;
+  width: 80%;
+  margin-left: 10%;
+  position: absolute;
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: 3px solid white;
+  z-index: 3;
+  transform: translateY(30px);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+figcaption h6{
+  font-size:20px;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+}
+
+figcaption p{
+  font-size: 14px;
+  font-weight: bold;
+  margin-top:5px;
+
+}
+
+figure:hover figcaption{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+#navbar {
+  background-image: linear-gradient(
+    to right,
+    #00dbde,
+    #fc00ff);
+  height: 55px;
+  text-align: center;
+  z-index: 3;
+  
+}
+
+.content {
+  padding: 16px;
+}
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
